@@ -4,7 +4,7 @@
 
 body {
   position: relative;
-  font-family: "MONOID";
+  font-family: "Monoid";
   width: 1440px;
   height: 8889px;
   display: block;
@@ -12,13 +12,23 @@ body {
   background-color: #6d92ca;
 }
 
-/* 
-h1 {
+/* Font Styles */
+.FontBold {
   font-weight: 700;
 }
-h2 {
-  font-weight: 500;
-} */
+
+.FontRegular {
+  font-weight: 400;
+}
+
+.FontRetina {
+  font-weight: 300;
+}
+
+.FontItalic {
+  font-weight: 300;
+  font-style: italic;
+}
 
 /* Common */
 
@@ -27,6 +37,11 @@ h2 {
   margin: 0 auto;
   max-width: 1440px;
   height: 100%;
+  background: url("../images/MainBGRuler.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 50% 860px;
+
 }
 
 /* Section 1 */
@@ -396,9 +411,6 @@ h2 {
 
 .MonoidText {
   font-size: 64px;
-  font-family: Monoid;
-  font-style: italic;
-  font-weight: 400;
   line-height: 85px;
   word-wrap: break-word;
 }
@@ -409,7 +421,7 @@ h2 {
   position: absolute;
   top: 3750px;
   left: -1px;
-  width: 1454px;
+  width: 100%;
   height: 1528px;
   background: url("../images/axis.png");
   background-size: contain;
@@ -542,22 +554,406 @@ h2 {
   word-wrap: break-word
 }
 
-/* .description {
-  height: 450px;
-  width: 950px;
-  background-image: url("../images/kletka.png");
+/* Section 2 */
+
+.SectionMark {
+  position: absolute;
+  top: 5267px;
+  left: 0;
+  padding-top: 185px;
+  padding-bottom: 54px;
+}
+
+.Mark {
+  position: relative;
+  width: 1078px;
+  height: 580px;
   margin: 0 auto;
-  margin-top: 80px;
+  background: url("../images/Mark-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.description-1 {
+.MarkTitle {
+  text-align: center;
+  padding-top: 96px;
+  -webkit-text-stroke: 2px black;
+
+  color: #BFA4DE;
+  font-size: 40px;
+  font-family: Monoid;
+  font-weight: 700;
+  line-height: 53.55px;
+  word-wrap: break-word
+}
+
+.MarkInner {
   display: flex;
-  justify-content: space-between;
-  margin: 100px auto 0;
-  margin-top: auto;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding-top: 70px;
+  color: black;
 }
 
-.description-1 img {
-  margin-top: 5px;
-  margin-left: 40px;
-} */
+.MarkFourPercents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding-top: 30px;
+}
+
+.MarkFour {
+  color: #BFA4DE;
+  font-size: 120px;
+  font-family: Monoid;
+  font-weight: 400;
+  line-height: 53.55px;
+  word-wrap: break-word
+}
+
+.MarkPercents {
+  font-size: 70px;
+  font-family: Monoid;
+  font-weight: 400;
+  line-height: 53.55px;
+  padding-left: 9px;
+}
+
+.MarkEqual {
+  display: block;
+  background: url("../images/equal.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  width: 66px;
+  height: 42px;
+  margin-left: 44px;
+}
+
+.MarkDivider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 62px;
+}
+
+.MarkDividerTop {
+  background: url("../images/MonoPlusId.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  width: 263px;
+  height: 50px;
+}
+
+.MarkLine {
+  margin-top: 37px;
+  width: 410px;
+  height: 3px;
+  background: black
+}
+
+.MarkDividerBottom {
+  margin-top: 14px;
+  background: url("../images/MonoPlusIdThin.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  width: 263px;
+  height: 50px;
+}
+
+/* Section 3 */
+
+.Triangles {
+  width: 1440px;
+  height: 788px;
+  background: url("../images/Triangles.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  top: 5990px;
+  left: -10px;
+  margin-top: 54px;
+  margin-bottom: 154px;
+  -webkit-text-stroke: 2px black;
+  color: #BFA4DE;
+}
+
+.TrianglesM {
+  width: 87px;
+  height: 103px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 465px;
+  left: 248px;
+  font-size: 118px;
+  -webkit-text-stroke: 4px black;
+}
+
+.TrianglesM p {
+  transform: scaleX(1.4) translate(-10px, 20px);
+}
+
+.TrianglesOsmall {
+  width: 44px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 253px;
+  left: 360px;
+  font-size: 55px;
+  -webkit-text-stroke: 4px black;
+
+  transform: rotate(180deg);
+}
+
+.TrianglesOsmall p {
+  transform: scaleX(1.2) translate(10px, 0);
+}
+
+.TrianglesN {
+  width: 71px;
+  height: 92px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 207px;
+  left: 606px;
+  font-size: 118px;
+  -webkit-text-stroke: 4px black;
+
+  transform: rotate(180deg);
+}
+
+.TrianglesN p {
+  transform: scaleX(1.2) translate(5px, 0);
+}
+
+.TrianglesO {
+  width: 91px;
+  height: 117px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 456px;
+  left: 711px;
+  font-size: 118px;
+  -webkit-text-stroke: 4px black;
+}
+
+.TrianglesO p {
+  transform: scaleX(1.2) translate(-15px, 20px);
+}
+
+.TrianglesI {
+  width: 36px;
+  height: 53px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 374px;
+  left: 990px;
+  font-size: 55px;
+  -webkit-text-stroke: 4px black;
+
+  transform: rotate(180deg);
+}
+
+.TrianglesI p {
+  transform: scaleX(1.2) translate(10px, 0);
+}
+
+.TrianglesD {
+  width: 91px;
+  height: 117px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 463px;
+  left: 1181px;
+  font-size: 118px;
+  -webkit-text-stroke: 4px black;
+}
+
+.TrianglesD p {
+  transform: scaleX(1.2) translate(-15px, 20px);
+}
+
+/* Section 4 */
+
+.Math {
+  background: url("../images/Math.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: 1305px;
+
+  position: absolute;
+  top: 6752px;
+  left: 0;
+}
+
+/* Section 5 */
+
+.kvadrat1 {
+  width: 270px;
+  height: 260px;
+  position: absolute;
+  top: 8130px;
+}
+
+.kvadrat2 {
+  width: 531px;
+  height: 258px;
+  position: absolute;
+  top: 8379px;
+}
+
+.kvadrat2 .hse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.kvadrat3 {
+  width: 270px;
+  height: 261px;
+  position: absolute;
+  top: 8627px;
+}
+
+.kvadrat3 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+}
+
+.kvadrat4 {
+  width: 270px;
+  height: 261px;
+  position: absolute;
+  top: 8627px;
+  left: 261px;
+}
+
+.kvadrat5 {
+  width: 270px;
+  height: 261px;
+  position: absolute;
+  top: 8627px;
+  left: 522px;
+}
+
+.kvadrat5 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+}
+
+.kvadrat6 {
+  width: 270px;
+  height: 261px;
+  position: absolute;
+  top: 8627px;
+  left: 781px;
+}
+
+.kvadrat7 {
+  width: 270px;
+  height: 261px;
+  position: absolute;
+  top: 8627px;
+  left: 1041px;
+  white-space: nowrap
+}
+
+.kvadrat7 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+}
+
+.kvadrat8 {
+  width: 266.77px;
+  height: 263.18px;
+  position: absolute;
+  transform: rotate(-21.48deg);
+  top: 8135.69px;
+  left: 562px;
+}
+
+.kvadrat8 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+}
+
+.kvadrat9 {
+  width: 266.77px;
+  height: 263.18px;
+  position: absolute;
+  transform: rotate(22.7deg);
+  top: 8330.69px;
+  left: 935px;
+}
+
+.kvadrat9 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+}
+
+.kvadrat10 {
+  width: 266.77px;
+  height: 263.18px;
+  position: absolute;
+  transform: rotate(60.2deg);
+  top: 8577px;
+  left: 1287px;
+}
+
+.kvadrat10 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+}
